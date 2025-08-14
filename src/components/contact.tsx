@@ -53,6 +53,7 @@ export default function ContactPage() {
       <form onSubmit={handleSubmit} style={{ width: "100%" }}>
         <Flex direction="column" gap="m">
           <Input
+            id="contact-name"
             name="name"
             type="text"
             placeholder="Your Name"
@@ -61,6 +62,7 @@ export default function ContactPage() {
             required
           />
           <Input
+            id="contact-email"
             name="email"
             type="email"
             placeholder="Your Email"
@@ -69,6 +71,7 @@ export default function ContactPage() {
             required
           />
           <Textarea
+            id="contact-message"
             name="message"
             placeholder="Your Message"
             value={form.message}
