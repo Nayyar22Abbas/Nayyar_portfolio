@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Nayyar",
+  lastName: "Abbas",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Web Developer & Devops Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "22nayyarabbas@gmail.com",
+  location: "Islamabad/Pakistan", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I'm a MERN Stack Developer and DevOps Engineer who enjoys building full-stack web applications and crafting efficient development pipelines.
+       I often share insights on scalable architecture, modern tooling, and the intersection of code, infrastructure, and creativity.
     </>
   ),
 };
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Nayyar22Abbas",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/nayyar-abbas-332216329/",
   },
   {
     name: "Email",
@@ -55,16 +50,18 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Shaping digital products from concept to deployment.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">DocXtract</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      <p style={{ fontSize: '0.9rem' }}>
+    I'm a MERN Stack Developer and DevOps Engineer who enjoys building full-stack web applications and crafting efficient development pipelines.
+    I often share insights on scalable architecture, modern tooling, and the intersection of code, infrastructure, and creativity.
+  </p>
     </>
   ),
 };
@@ -90,9 +87,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Nayyar is a full-stack developer and DevOps engineer passionate about crafting performant web 
+        applications and building resilient development pipelines. With a strong foundation in both
+         software engineering and infrastructure automation, he thrives at the intersection of code, 
+         systems, and collaboration. His work spans responsive UIs, backend APIs, CI/CD tooling, 
+         and the integration of development and operations into unified, scalable solutions.
       </>
     ),
   },
@@ -101,18 +100,35 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Free Lancing",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Web Developer & Devops Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Built a real-time code visualization tool that supports multiple programming languages, 
+            enhancing students' understanding of code execution flow and debugging patterns.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed an AI-powered document analysis tool to extract 
+            insights, summaries, and predictive insights from structured academic and technical documents.
           </>,
+          <>
+            Designed and developed a full-featured e-commerce web app with user authentication, 
+            product listing, cart management, and admin dashboard using the MERN stack.
+          </>,
+          <>
+            Developed a POS system with inventory management, customer tracking, and real-time sales reports. Built
+             with .NET and integrated with a local database for small businesses.
+          </>,
+          <>
+            Created a university portal enabling student registration, attendance tracking, and assignment submissions. 
+            Included admin roles, student dashboards, and automated email notifications.
+          </>,
+          <>
+            Implemented a CI/CD pipeline using GitHub Actions, 
+            Docker, and Jenkins for a sample microservice app, automating build, test, and deployment stages.
+          </>
+          
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -124,22 +140,7 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      
     ],
   },
   studies: {
@@ -147,12 +148,8 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "Air University Islamabad",
         description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
@@ -161,37 +158,82 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+  title: "Next.js",
+  description: (
+    <>
+      <ul>
+        <li>Building server-side rendered and statically generated applications</li>
+        <li>Experienced with both App Router and Pages Router</li>
+        <li>SEO optimization using metadata and dynamic routing</li>
+        <li>Deployed apps using Vercel, Netlify, and custom domains</li>
+      </ul>
+    </>
+  ),
+},
+{
+  title: "Web Development (MERN Stack)",
+  description: (
+    <>
+      <ul>
+        <li>Building full-stack apps using MongoDB, Express, React, and Node.js</li>
+        <li>Reusable component-based UI development</li>
+        <li>REST API design and integration</li>
+        <li>State management using Context API and hooks</li>
+      </ul>
+    </>
+  ),
+},
+{
+  title: "DevOps (Beginner Level)",
+  description: (
+    <>
+      <ul>
+        <li>CI/CD with GitHub Actions and Jenkins</li>
+        <li>Basic Docker usage for containerization</li>
+        <li>Shell scripting for automation (Bash)</li>
+        <li>Working knowledge of deployment pipelines</li>
+      </ul>
+    </>
+  ),
+},
+{
+  title: "Version Control & Collaboration",
+  description: (
+    <>
+      <ul>
+        <li>Proficient with Git and GitHub workflow</li>
+        <li>Collaborating using team tools like Trello, Slack</li>
+        <li>Managing feature branches and pull requests</li>
+      </ul>
+    </>
+  ),
+},
+{
+  title: "Programming Languages",
+  description: (
+    <>
+      <ul>
+        <li>JavaScript (Advanced)</li>
+        <li>TypeScript (Intermediate)</li>
+        <li>C / C++ (Intermediate)</li>
+        <li>C# (Intermediate)</li>
+        <li>Python (Basic)</li>
+      </ul>
+    </>
+  ),
+},
+{
+  title: "Technical Writing & Research",
+  description: (
+    <>
+      <ul>
+        <li>Writing clear technical documentation</li>
+        <li>Creating structured project reports and summaries</li>
+        <li>Fast learning and experimentation with emerging tech</li>
+      </ul>
+    </>
+  ),
+},
     ],
   },
 };
@@ -199,70 +241,67 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Exploring DevOps, full-stack development & design systems",
+  description: `Insights and updates from ${person.name} on scalable architecture, web engineering, and developer workflows.`,
+  // Posts listed from app/blog/posts
 };
 
 const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Full-stack development, DevOps solutions, and design engineering projects by ${person.name}`,
+  // Add .mdx project files to app/work
 };
 
 const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  description: `Snapshots of code, creativity, and community – curated by ${person.name}`,
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      alt: "DevOps pipeline visualization",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      alt: "Campus Portal UI Screenshot",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      alt: "POS System Dashboard",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      alt: "Figma UI Designs",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
+      alt: "Terminal view of CI/CD scripts",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
+      alt: "MERN Stack Authentication Module",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      alt: "Node.js API integration logs",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      alt: "Cloud deployment interface",
       orientation: "vertical",
     },
   ],
 };
+
 
 export { person, social, newsletter, home, about, blog, work, gallery };

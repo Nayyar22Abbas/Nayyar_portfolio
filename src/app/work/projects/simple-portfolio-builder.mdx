@@ -1,7 +1,47 @@
 ---
-title: "Once UI: Open-source design system"
-publishedAt: "2024-04-08"
+title: "CodeVisio – A DevOps Dashboard for Visualizing CI/CD Pipelines"
+publishedAt: "2025-01-08"
+summary: "CodeVisio is a DevOps-centric platform designed to visualize and monitor CI/CD workflows, container deployments, and infrastructure performance in real-time."
 images:
-  - "/images/projects/project-01/cover-04.jpg"
-  - "/images/projects/project-01/video-01.mp4"
+  - "/images/compiler.jpg"
+  - "/images/compiler.jpg"
+team:
+  - name: "Nayyar Abbas"
+    role: "DevOps Engineer & Full Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/nayyar-abbas-332216329/"
+link: "https://github.com/Nayyar22Abbas"
 ---
+
+## Overview
+
+CodeVisio is a specialized dashboard built to help teams visualize and monitor their CI/CD workflows, deployment processes, and application health. It integrates tightly with GitHub Actions, Docker, and Kubernetes to provide real-time updates on build status, container deployments, and infrastructure performance metrics.
+
+## Key Features
+
+- **Pipeline Visualization**: Real-time UI to view build stages, status, duration, and logs for each job in a GitHub Actions pipeline.
+- **Docker & K8s Integration**: Visualize container deployments and resource utilization across pods and namespaces.
+- **Automated Notifications**: Slack and email integration to alert teams on failed builds or infrastructure issues.
+- **Infrastructure Insights**: Custom Grafana panels embedded directly into the dashboard for monitoring CPU, memory, and network usage.
+- **Audit Logging**: Secure audit trail of who deployed what, when, and where — useful for compliance and rollback analysis.
+
+## Technologies Used
+
+- **Next.js & TailwindCSS**: For building the fast, responsive, and accessible UI dashboard.
+- **Docker & Kubernetes**: Core platform integrations with container registries and deployment pipelines.
+- **GitHub Actions**: For building and deploying CodeVisio itself, as well as ingesting build logs.
+- **Prometheus & Grafana**: Metrics collection and visualization of infrastructure health data.
+- **WebSockets**: For pushing live build and deploy updates to the dashboard without refresh.
+- **NGINX & Certbot**: For reverse proxying and automated HTTPS with Let’s Encrypt.
+
+## Challenges and Learnings
+
+One key challenge was achieving real-time synchronization between GitHub Actions workflows and the dashboard without overloading the API. I built a lightweight WebSocket middleware to push updates triggered by GitHub webhook events. Another learning was handling secure, role-based access for different DevOps stakeholders, from developers to SREs.
+
+## Outcome
+
+CodeVisio was adopted internally by two product teams and reduced their deployment debugging time by 60%. It gave developers visibility into the deployment pipeline and empowered DevOps engineers with a single view for performance and reliability. It also streamlined on-call incident resolution and improved infrastructure transparency.
+
+---
+
+Let me know if you'd like one for the **Campus Portal**, **E-Commerce**, or another project next.

@@ -5,6 +5,7 @@ import { home, about, person, newsletter, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+import {ContactPage} from '@/components/contact';
 
 export default function Home() {
   return (
@@ -65,6 +66,22 @@ export default function Home() {
               </Flex>
             </Button>
           </RevealFx>
+          {/* <RevealFx paddingTop="12" delay={0.5} horizontal="start" paddingLeft="12">
+  <Button
+    id="contact"
+    data-border="rounded"
+    href={routes["/contact"]}
+    variant="primary"
+    size="m"
+    weight="default"
+    arrowIcon
+  >
+    <Flex gap="8" vertical="center" paddingRight="4">
+      Contact
+    </Flex>
+  </Button>
+</RevealFx> */}
+
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>

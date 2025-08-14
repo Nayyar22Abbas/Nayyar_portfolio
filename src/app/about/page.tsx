@@ -72,7 +72,7 @@ export default function About() {
           position="fixed"
           paddingLeft="24"
           gap="32"
-          hide="s"
+          hide={false}
         >
           <TableOfContents structure={structure} about={about} />
         </Column>
@@ -164,14 +164,7 @@ export default function About() {
                                 weight="default"
                                 variant="secondary"
                             />
-                            <IconButton
-                                className="s-flex-show"
-                                size="l"
-                                key={`${item.name}-icon`}
-                                href={item.link}
-                                icon={item.icon}
-                                variant="secondary"
-                            />
+                          
                         </React.Fragment>
                     ),
                 )}

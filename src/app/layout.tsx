@@ -4,7 +4,7 @@ import '@/resources/custom.css'
 
 import classNames from "classnames";
 
-import { Background, Column, Flex, Meta, opacity, SpacingToken } from "@once-ui-system/core";
+import { Background, Column, Flex, LayoutProvider, Meta, opacity, SpacingToken } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from '@/components';
 import { baseURL, effects, fonts, style, dataStyle, home } from '@/resources';
 
@@ -24,6 +24,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+   
     <Flex
       suppressHydrationWarning
       as="html"
@@ -95,6 +96,7 @@ export default async function RootLayout({
           }}
         />
       </head>
+      <LayoutProvider>
       <Providers>
         <Column as="body" background="page" fillWidth style={{minHeight: "100vh"}} margin="0" padding="0" horizontal="center">
           <Background
@@ -156,6 +158,8 @@ export default async function RootLayout({
             <Footer/>
           </Column>
         </Providers>
+        </LayoutProvider>
       </Flex>
+      
   );
 }
